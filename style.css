@@ -1,0 +1,319 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #FEFFF9; */
+    background-color: #fefee9;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* <weight>: Use a value from 100 to 900 */
+}
+
+.headings {
+    font-size: 5vw;
+    color: #034b30;
+    padding-left: 5%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* <weight>: Use a value from 200 to 800 */
+}
+
+.gradient-mesh {
+      /* width: 100vw; */
+      height: 200vh;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      background: conic-gradient(from 0deg, #b7bbff, #fefee9, #cacff4, #f6d5f8, #ffc8d9);
+      animation: rotate 8s linear infinite;
+      filter: blur(100px);
+      opacity: 0.8;
+      z-index: -1;
+    }
+
+    @keyframes rotate {
+      0%   { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+#logo {
+    background-color: rgb(255 255 255 / 65%);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    z-index: 100;
+    width: 50vw;
+    height: auto;
+    padding: 2%;
+    border-radius: 6vw;
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
+
+#vherna {
+    width: 90%;
+    height: 80%;
+    pointer-events: none;
+}
+
+#bannerContainer {
+    width: 100vw;
+    aspect-ratio: 20/10;
+    /* background-color: red; */
+    background-image: url("VHERNA.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#posterContainer {
+    height: 80%;
+    width: 100%;
+    padding: 5%;
+    scroll-behavior: smooth;
+    /* background-color: aqua; */
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    white-space: nowrap;
+    display: flex;
+    gap: 10vw;
+}
+
+.poster {
+    width: 80%;
+    aspect-ratio: 16/9;
+    /* background-color: blue; */
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-size: cover;
+    scroll-snap-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* enter poster links under this */
+
+#categoryDiv {
+    /* background-color: greenyellow; */
+    height: 15vh;
+    width: 100vw;
+    margin-top: 5vh;
+}
+
+.categoryName {
+    transform: translateY(-50%);
+    font-size: 30px;
+    white-space: wrap;
+}
+
+#options {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+    /* background-color: aquamarine; */
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 5vw;
+    transform: translateY(-10%);
+}
+
+.option {
+    /* background-color: green; */
+    border: 3px solid #00C57A;
+    width: 100px;
+    height: 80px;
+    aspect-ratio: 1/1;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#option1 {
+    margin-left: 5%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#option2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#option3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#option4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#option5 {
+    margin-right: 5%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.categoryName {
+    transform: translateY(300%);
+    font-size: 15px;
+}
+
+#gif {
+    width: 100vw;
+    aspect-ratio: 1920/1080;
+    position: fixed;
+    top: 50%;
+}
+
+#latest {
+    width: 100vw;
+    aspect-ratio: 16/10;
+    transform: translateY(-5%);
+    /* background-color: red; */
+}
+
+#latest .headings {
+    transform: translateY(200%);
+    /* background-color: #00C57A; */
+}
+
+#latestContainer {
+    width: 100vw;
+    aspect-ratio: 16/10;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 10%;
+}
+
+.product {
+    height: 70%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    border: 3px solid #0000003d;
+    box-shadow: 0px 0px 10px white;
+    background-color: #ffffff69;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#product1 {
+    margin-left: 5%;
+}
+
+#product2 {
+    margin-right: 5%;
+}
+
+#latest .product .name {
+    /* background-color: greenyellow; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 2%;
+}
+
+.image {
+    /* background-color: blue; */
+    height: 120%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-16.5%);
+
+}
+
+#latest .product .name p {
+    /* background-color: rgb(76, 60, 60); */
+    font-size: 4vw;
+    margin: 5%;
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+#latest .product .model {
+    height: 80%;
+    scale: 2;
+    transform: translateY(20%);
+    aspect-ratio: 1920/1080;
+    filter: saturate(200%);
+}
+
+#mostOrdered .headings {
+    margin-top: -2vh;
+    margin-bottom: 0vh;
+}
+
+#orderContainer {
+    width: 100vw;
+    height: 25vh;
+    background-color: #3d7771cc;
+    border: 2px solid #3d7771;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    border-radius: 10px;
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 5vw;
+}
+
+.productContainer {
+    height: 100%;
+    aspect-ratio: 3/4;
+    border: 1px solid rgb(21, 21, 21);
+    background-color: #a1eecf;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.productImg {
+    width: 80%;
+    aspect-ratio: 1/1;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+
+
+
