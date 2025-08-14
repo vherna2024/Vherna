@@ -1,0 +1,284 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /* background-color: #FEFFF9; */
+    background-color: #fefee9;
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    /* <weight>: Use a value from 100 to 900 */
+}
+
+.headings {
+    font-size: 5vw;
+    color: #034b30;
+    padding-left: 5%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* <weight>: Use a value from 200 to 800 */
+}
+
+.gradient-mesh {
+    /* width: 100vw; */
+    height: 200vh;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    background: conic-gradient(from 0deg, #b7bbff, #fefee9, #cacff4, #f6d5f8, #ffc8d9);
+    animation: rotate 8s linear infinite;
+    filter: blur(100px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#logo {
+    background-color: rgb(255 255 255 / 65%);
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    z-index: 100;
+    width: 50vw;
+    height: auto;
+    padding: 2%;
+    border-radius: 6vw;
+    position: fixed;
+    top: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.2));
+}
+
+#vherna {
+    width: 90%;
+    height: 80%;
+    pointer-events: none;
+}
+
+#productIMGContainer {
+    width: 100vw;
+    aspect-ratio: 4/5;
+    /* background-color: red; */
+    background-image: url("VHERNA.svg");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#imgContainer {
+    height: 80%;
+    width: 100%;
+    padding: 5%;
+    scroll-behavior: smooth;
+    /* background-color: aqua; */
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    white-space: nowrap;
+    display: flex;
+    gap: 10vw;
+}
+
+.productIMG {
+    width: 80%;
+    aspect-ratio: 1;
+    /* background-color: blue; */
+    display: inline-block;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-size: cover;
+    scroll-snap-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#detailContainer {
+    width: 100vw;
+    height: 50vh;
+    background-color: white;
+    border-radius: 40px 40px 0 0;
+    box-shadow: 0px 0px 20px rgba(79, 79, 79, 0.351);
+    overflow-y: auto;
+}
+
+#name {
+    font-size: 8vw;
+    color: #064E3F;
+    padding-left: 5%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-top: 2vh;
+}
+
+#description {
+    font-size: 4vw;
+    color: #464646;
+    padding-left: 5%;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+}
+
+#price {
+    font-size: 8vw;
+    color: #064E3F;
+    padding-left: 5%;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 0;
+}
+
+#suggetions {
+    background-color: #c9d3cf;
+    width: 95vw;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#heading {
+    padding: 2%;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: white;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#list {
+    width: 80%;
+    padding: 5vw;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.list2 {
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+}
+
+.card {
+    width: 45%;
+    /* aspect-ratio: 5/3; */
+    border-radius: 10px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardImg {
+    width: 90%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    margin: 4%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cardName {
+    text-align: center;
+}
+
+#gap {
+    margin: 15vh;
+}
+
+#buttons {
+    position: fixed;
+    bottom: 2vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 8vh;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.604);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgb(158, 158, 158);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.button {
+    height: 60%;
+    width: 40%;
+    padding-left: 1%;
+    padding-right: 1%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgba(255, 255, 255, 0.66);
+}
+
+#button1 {
+    background: linear-gradient(to right, #46b35e, #1d8f32);
+    box-shadow: 0px 0px 100px #5eff81d5;
+}
+
+#button2 {
+    background: linear-gradient(to left, #4265b2, #074dae);
+    box-shadow: 0px 0px 100px #5f92ffd2;
+}
+
+.buttonText {
+    text-align: center;
+    color: #fffbfe;
+}
+
+#minOrder {
+    position: fixed;
+    top: 30vh;
+    right: -15vw;
+    border-radius: 100px;
+    border: 1px solid rgb(243, 243, 243);
+    overflow: hidden;
+    padding: 6px;
+    white-space: nowrap;
+    background-color: rgba(190, 190, 190, 0.512);
+    backdrop-filter: blur(10px);
+    display: flex;
+    transform: rotate(-90deg);
+}
+
+#minOrder p{
+    background-color: white;
+    margin: 2px;
+    padding: 6px;
+    border-radius: 100px;
+}
