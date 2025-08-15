@@ -71,7 +71,7 @@ body {
     border-radius: 6vw;
     position: fixed;
     top: 5vh;
-    left: 40%;
+    left: 50%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
