@@ -2,6 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Apply to everything */
+* {
+    user-select: none;
+}
+
+/* Or, apply only to specific elements */
+.no-select {
+    user-select: none;
+}
+
+
 body {
     /* background-color: #FEFFF9; */
     background-color: #fefee9;
@@ -25,24 +36,29 @@ body {
 }
 
 .gradient-mesh {
-      /* width: 100vw; */
-      height: 200vh;
-      aspect-ratio: 1;
-      border-radius: 50%;
-      position: fixed;
-      top: -50%;
-      left: -50%;
-      background: conic-gradient(from 0deg, #b7bbff, #fefee9, #cacff4, #f6d5f8, #ffc8d9);
-      animation: rotate 8s linear infinite;
-      filter: blur(100px);
-      opacity: 0.8;
-      z-index: -1;
+    /* width: 100vw; */
+    height: 200vh;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    background: conic-gradient(from 0deg, #b7bbff, #fefee9, #cacff4, #f6d5f8, #ffc8d9);
+    animation: rotate 8s linear infinite;
+    filter: blur(100px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
     }
 
-    @keyframes rotate {
-      0%   { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+    100% {
+        transform: rotate(360deg);
     }
+}
 
 #logo {
     background-color: rgb(255 255 255 / 65%);
@@ -54,8 +70,8 @@ body {
     padding: 2%;
     border-radius: 6vw;
     position: fixed;
-    top: 2vh;
-    left: 50%;
+    top: 5vh;
+    left: 40%;
     transform: translateX(-50%);
     display: flex;
     align-items: center;
@@ -67,6 +83,54 @@ body {
     width: 90%;
     height: 80%;
     pointer-events: none;
+}
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    15% {
+        transform: rotate(-5deg);
+    }
+
+    30% {
+        transform: rotate(5deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    60% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-3deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#consultation {
+    height: 20vw;
+    aspect-ratio: 1;
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    display: inline-block;
+    cursor: grab;
+    user-select: none;
+    animation: wiggle 0.5s ease-in-out infinite;
+}
+
+marquee {
+    background-color: black;
+    padding: 2%;
+    color: white;
 }
 
 #bannerContainer {
@@ -313,7 +377,4 @@ body {
     background-color: blue;
     border-radius: 10px;
 }
-
-
-
 

@@ -2,6 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Apply to everything */
+* {
+  user-select: none;
+}
+
+/* Or, apply only to specific elements */
+.no-select {
+  user-select: none;
+}
+
+
 body {
     /* background-color: #FEFFF9; */
     background-color: #fefee9;
@@ -156,14 +167,14 @@ body {
     flex-direction: column;
     align-items: center;
     width: 80%;
-    height: 50%;
+    height: 40%;
     /* background-color: red; */
 }
 
 .option {
     /* background-color: green; */
     border: 3px solid #00C57A;
-    width: 80%;
+    width: 70%;
     /* height: 100%; */
     aspect-ratio: 1/1;
     border-radius: 100%;

@@ -2,6 +2,17 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Apply to everything */
+* {
+  user-select: none;
+}
+
+/* Or, apply only to specific elements */
+.no-select {
+  user-select: none;
+}
+
+
 body {
     /* background-color: #FEFFF9; */
     background-color: #fefee9;
@@ -144,7 +155,7 @@ body {
 
 #price {
     font-size: 8vw;
-    color: #064E3F;
+    color: black;
     padding-left: 5%;
     font-family: "DM Serif Display", serif;
     font-weight: 400;
